@@ -12,6 +12,6 @@ public class leapYear {
             System.out.println("Количество дней 366");
         }else if (yaar % 100 != 0){
             System.out.println("Количество дней 365");
-        }int w;
+        }
     }
 }
