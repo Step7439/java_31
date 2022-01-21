@@ -7,9 +7,9 @@ public class leapYear {
         int yaar = scanner.nextInt();
 
         if(yaar % 400 == 0 || yaar % 4 == 0){
-            System.out.println("Количество дней 365");
-        }else if (yaar % 100 != 0){
             System.out.println("Количество дней 366");
-        }System.out.println(yaar);
+        }else if (yaar % 100 != 0){
+            System.out.println("Количество дней 365");
+        }
     }
 }
