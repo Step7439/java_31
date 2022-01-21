@@ -1,3 +1,5 @@
+package ProgramStructure;
+
 import java.util.Scanner;
 
 public class SumThreeNumber {
