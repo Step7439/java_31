@@ -16,8 +16,6 @@ public class leapYear {
         System.out.println("Введите год в формате \"yyyy\"");
         int x1 = scanner.nextInt();
         int sum = yaer(x1);
-        System.out.println(sum);
+        System.out.println("Количество дней " + sum);
     }
-
-
 }
