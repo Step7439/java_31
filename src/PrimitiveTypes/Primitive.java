@@ -5,31 +5,31 @@ public class Primitive {
     public static Scanner scanner = new Scanner(System.in);
     public static void compare(){
         System.out.println("Введите первое число:");
-            float x = scanner.nextFloat();
+            float oneNumber = scanner.nextFloat();
             System.out.println("Введите второе число:");
-            float c = scanner.nextFloat();
+            float twoNumber = scanner.nextFloat();
 
-            if (Math.abs(x - c) < 0.001) {
+            if (Math.abs(oneNumber - twoNumber) < 0.001) {
                 System.out.println("Результат: числа ровны");
-            } else if (x < c) {
-                System.out.println("Результат: " + c + " Больше чем " + x);
+            } else if (oneNumber < twoNumber) {
+                System.out.println("Результат: " + twoNumber + " Больше чем " + oneNumber);
             } else {
-                System.out.println("Результат: " + x + " Больше чем " + c);
+                System.out.println("Результат: " + oneNumber + " Больше чем " + twoNumber);
             }
 
     }
     public static void roundUP(){
         System.out.println("Ведите не целое чесло: ");
-        double x = scanner.nextDouble();
-        double c = Math.round(x);
-        System.out.println("Результат: " + c);
+        double oneDouble = scanner.nextDouble();
+        double result = Math.round(oneDouble);
+        System.out.println("Результат: " + result);
 
     }
     public static void fraction(){
         System.out.println("Ведите число: ");
-        double x = scanner.nextDouble();
-        int c = (int) x;
-        System.out.println("Результат: " + c);
+        double oneDouble = scanner.nextDouble();
+        int result = (int) oneDouble;
+        System.out.println("Результат: " + result);
     }
     public static void main(String[] args) {
 
