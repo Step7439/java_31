@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class Texes {
     public static Scanner scanner = new Scanner(System.in);
-
-
-    //public static String exit;
     public static int income(int earnings) {
         int tax = (int )(earnings * 0.06);
         if (tax >= 0) {
@@ -53,18 +50,18 @@ public class Texes {
                     spendings += money1;
                     break;
                 case 3:
-                    int x = income(earnings);
-                    int c = incomeAndExpense(earnings, spendings);
-                    if(x <= c){
+                    int earningsResult = income(earnings);
+                    int earningsSpendingsResult = incomeAndExpense(earnings, spendings);
+                    if(earningsResult <= earningsSpendingsResult){
                         System.out.println("Мы советуем вам УСН доходы:\n" +
-                                "Ваш налог составит: " + x + " рублей\n" +
-                                "Налог на другой системе: " + c + " рублей\n" +
-                                "Экономия: " + (c - x) + " рублей");
+                                "Ваш налог составит: " + earningsResult + " рублей\n" +
+                                "Налог на другой системе: " + earningsSpendingsResult + " рублей\n" +
+                                "Экономия: " + (earningsSpendingsResult - earningsResult) + " рублей");
                     }else {
                         System.out.println("Мы советуем вам УСН доходы и расходы:\n" +
-                                "Ваш налог составит: " + c + " рублей\n" +
-                                "Налог на другой системе: " + x + " рублей\n" +
-                                "Экономия: " + (c - x) + " рублей");
+                                "Ваш налог составит: " + earningsSpendingsResult + " рублей\n" +
+                                "Налог на другой системе: " + earningsResult + " рублей\n" +
+                                "Экономия: " + (earningsSpendingsResult - earningsResult) + " рублей");
                         }
                     System.out.println();
                     break;
