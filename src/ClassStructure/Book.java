@@ -6,6 +6,7 @@ public class Book {
     public String name;
     public int pages;
     public int reting;
+    public Auhtor auhtor;
 
     public Book(String name, int pages, int reting){
         this.name = name;

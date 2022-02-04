@@ -27,8 +27,8 @@ public class Primitive {
     }
     public static void fraction(){
         System.out.println("Ведите число: ");
-        double oneDouble = scanner.nextDouble();
-        int result = (int) oneDouble;
+        float oneFloat = scanner.nextFloat();
+        short result = (short) oneFloat;
         System.out.println("Результат: " + result);
     }
     public static void main(String[] args) {
