@@ -12,5 +12,9 @@ public class User {
         this.email = email;
         totalOnline++;
     }
+    public void userOnline(){
+        System.out.print("(" + " " + name + " " + ")");
+        //System.out.print(")");
+    }
 
 }

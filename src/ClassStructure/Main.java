@@ -19,9 +19,12 @@ public class Main {
         auhtor2.toString();
         System.out.println();
 
+        Book.bookScore();
         System.out.println();
         System.out.println("Максимальный ретинг: " + Book.maxRetings);
-        System.out.printf("Онлайн пользовотилей: " + User.totalOnline);
-
+        System.out.println("Онлайн пользовотилей: " + User.totalOnline);
+        user1.userOnline();
+        user2.userOnline();
+        user3.userOnline();
     }
 }
