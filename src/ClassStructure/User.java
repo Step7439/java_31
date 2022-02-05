@@ -14,7 +14,6 @@ public class User {
     }
     public void userOnline(){
         System.out.print("(" + " " + name + " " + ")");
-        //System.out.print(")");
     }
 
 }
