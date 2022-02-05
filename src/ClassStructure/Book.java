@@ -20,6 +20,6 @@ public class Book {
         return null;
     }
     public static void bookScore(){
-        System.out.printf("В нашей библиотеки: " + booksScore + " книг!");
+        System.out.printf("В нашей библиотеки: " + booksScore + " книги!");
     }
 }
