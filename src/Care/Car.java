@@ -12,17 +12,16 @@ public class Car {
         this.colour = colour;
         this.fuel = fuel;
         fuelMax = Math.max(fuelMax, fuel);
-
     }
 
-    public void setgo() {
+    public void go() {
         if (fuel > 10) {
-            System.out.println("Можно ехать ");
-            fuelMaxCar = name;
-        } else if (fuel > 0 && fuel <= 10) {
-            System.out.println("Топливо скоро закончится ");
+            System.out.println("Можно ехать " + name);
+            //fuelMaxCar = name;
+        } else if (fuel > 0 && fuel < 10) {
+            System.out.println("Топливо скоро закончится " + name);
         } else {
-            System.out.println("Пустой бак ");
+            System.out.println("Пустой бак " + name);
         }
     }
 }
