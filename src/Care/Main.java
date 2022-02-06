@@ -10,8 +10,7 @@ public class Main {
         car2.go();
         car3.go();
 
-
-//        System.out.println("Наибольшее кол-во топлива: " + Car.fuelMax + " литров в автомобиле " + Car.fuelMaxCar);
+        System.out.println("Наибольшее кол-во топлива: " + Car.fuelMax + " литров в автомобиле " + Car.fuelMaxCar);
 
     }
 }

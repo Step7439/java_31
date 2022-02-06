@@ -17,16 +17,18 @@ public class Car {
 
     public void go() {
         if (fuel > 10) {
-            System.out.println("Наибольшее кол-во топлива: " + Car.fuelMax + " литров в автомобиле " + name);
-            System.out.println("Можно ехать " + name);
+            System.out.println("Можно ехать ");
+            if(fuel == 170){
+                fuelMaxCar = "Волга";
+            }else if(fuel == 10){
+                fuelMaxCar = "Ока";
+            }else if(fuel == 0){
+                fuelMaxCar = "Жигули";
+            }
         } else if (fuel > 0 && fuel <= 10) {
-            System.out.println("Топливо скоро закончится " + name);
-            fuelMaxCar = name;
+            System.out.println("Топливо скоро закончится ");
         } else {
-            System.out.println("Пустой бак " + name);
+            System.out.println("Пустой бак ");
         }
     }
-//    public void str(){
-//        System.out.println("Наибольшее кол-во топлива: " + Car.fuelMax + " литров в автомобиле " + fuelMaxCar);
-//    }
 }
