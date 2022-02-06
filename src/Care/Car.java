@@ -15,16 +15,10 @@ public class Car {
 
     }
 
-    public void go() {
+    public void setgo() {
         if (fuel > 10) {
             System.out.println("Можно ехать ");
-            if(fuel == 170){
-                fuelMaxCar = "Волга";
-            }else if(fuel == 10){
-                fuelMaxCar = "Ока";
-            }else if(fuel == 0){
-                fuelMaxCar = "Жигули";
-            }
+            fuelMaxCar = name;
         } else if (fuel > 0 && fuel <= 10) {
             System.out.println("Топливо скоро закончится ");
         } else {
