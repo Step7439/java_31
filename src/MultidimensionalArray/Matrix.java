@@ -19,7 +19,7 @@ public class Matrix {
         System.out.println("Вывод:");
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                rotatedColors[i][j] = colors[SIZE][j];
+                rotatedColors[i][j] = colors[SIZE - i -1][j];
                 System.out.format("%4d", rotatedColors[i][j]);
             }
             System.out.println();
