@@ -1,4 +1,4 @@
-package Polymorphism;
+package Polymorphism.HalfLife3;
 
 //import Polymorphism.weapon.BigGun;
 import Polymorphism.weapon.*;
