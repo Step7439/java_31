@@ -16,7 +16,7 @@ public class Main {
         //Проверить логин и пароль
         getUserByLoginAndPassword(login, password);
         //Вызвать методы валидации пользователя
-        validateUser(User user);
+        validateUser(getUserByLoginAndPassword(login,password));
         System.out.println("Доступ предтавлен");
     }
     public static User[] getUsers() {
