@@ -14,9 +14,9 @@ public class Main {
         String password = scanner.nextLine();
 
         //Проверить логин и пароль
-        getUserByLoginAndPassword(login, password);
+
         //Вызвать методы валидации пользователя
-        validateUser(getUserByLoginAndPassword(login,password));
+        validateUser(getUserByLoginAndPassword(login, password));
         System.out.println("Доступ предтавлен");
     }
     public static User[] getUsers() {
