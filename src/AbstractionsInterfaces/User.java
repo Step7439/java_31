@@ -13,13 +13,13 @@ public class User implements Administrator,Librarian,Reader,Supplier{
     }
 
     @Override
-    public void librarian() {
-        System.out.println(worker + " " + name + " заказывает книги.");
+    public void librarian(User reader) {
+        System.out.println(worker + " " + name + " Позвонил " + reader.name + " и сказал о просрочиной книге");
     }
 
     @Override
-    public void readers() {
-        System.out.println(worker + " " + name + " берет и возвращает книги.");
+    public void readers(User administrator) {
+        System.out.println(worker + " " + name + " заказал книгу у " + administrator.worker + administrator.name);
     }
 
     @Override

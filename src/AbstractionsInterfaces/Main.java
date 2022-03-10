@@ -9,5 +9,7 @@ public class Main {
 
         reader.customers(supplier);
         administrator.overdueNotification(librarian);
+        reader.readers(administrator);
+        librarian.librarian(reader);
     }
 }
