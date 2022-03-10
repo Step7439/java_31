@@ -2,14 +2,12 @@ package AbstractionsInterfaces;
 
 public class Main {
     public static void main(String[] args) {
-        Pety reader = new Pety("Pety","Reader");
-        reader.readers();
-        Vasay supplier = new Vasay("Vasay", "Supplier");
-        supplier.customers(supplier);
-        Tolik librarian = new Tolik("Tolik", "Librarian");
-        librarian.librarian();
-        Dima administrator = new Dima("Dima","Administrator");
-        administrator.overdueNotification();
+        User reader = new User("Pety","Reader");
+        User supplier = new User("Vasay", "Supplier");
+        User librarian = new User("Tolik", "Librarian");
+        User administrator = new User("Dima","Administrator");
+
         reader.customers(supplier);
+        administrator.overdueNotification(librarian);
     }
 }

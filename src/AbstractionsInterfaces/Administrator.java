@@ -1,5 +1,5 @@
 package AbstractionsInterfaces;
 
 public interface Administrator {
-    void overdueNotification();
+    void overdueNotification(User librarian);
 }
