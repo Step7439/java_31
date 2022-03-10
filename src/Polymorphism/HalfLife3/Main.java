@@ -15,7 +15,7 @@ public class Main {
         int slot;
         while (true) {
             slot = scanner.nextInt();
-            if(slot == -1){
+            if (slot == -1) {
                 break;
             }
             player.shotWithWeapon(slot);
