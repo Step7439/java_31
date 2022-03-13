@@ -30,6 +30,4 @@ public class Player {
         // Огонь!
         weapon.shot();
     }
-
-
 }

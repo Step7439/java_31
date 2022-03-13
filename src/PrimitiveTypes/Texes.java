@@ -22,8 +22,7 @@ public class Texes {
     public static void main(String[] args) {
         int earnings = 0;
         int spendings = 0;
-        //int obsIncome = 0;
-        //int obsIncomeAndExpense = 0;
+
         while(true) {
             System.out.println("Выберите операцию и введите её номер:\n" +
                     "1. Добавить новый доход\n" +
