@@ -1,5 +1,5 @@
 package AbstractionsInterfaces;
 
 public interface Supplier {
-    void customers(User supplier);
+    void customers(Reader reader);
 }

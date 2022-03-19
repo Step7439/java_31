@@ -1,5 +1,5 @@
 package AbstractionsInterfaces;
 
 public interface Librarian {
-    void librarian(User reader);
+    void librarian(Reader reader);
 }

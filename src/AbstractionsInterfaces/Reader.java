@@ -1,6 +1,5 @@
 package AbstractionsInterfaces;
 
 public interface Reader {
-   void readers(User administrator);
-
+   void readers(Administrator administrator);
 }
