@@ -13,5 +13,6 @@ public class Main {
         Contact info = map.get("Изброные");
         System.out.print(info.key + " ");
         System.out.println(info.value);
+
     }
 }
