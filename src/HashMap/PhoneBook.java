@@ -25,7 +25,7 @@ public class PhoneBook {
         for (Map.Entry entry : map.entrySet()){
             //System.out.println(entry.getValue());
             if (entry.setValue(name) == name){
-                System.out.println(entry.getValue());111
+                System.out.println(entry.getValue());
             }
         }
         return result;
