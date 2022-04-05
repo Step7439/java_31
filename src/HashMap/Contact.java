@@ -1,27 +1,25 @@
 package HashMap;
 
-public class Contact<K, V> {
-    protected K key;
-    protected V value;
+import java.util.List;
 
-    public Contact(K key, V value) {
-        this.key = key;
-        this.value = value;
+public class Contact {
+    private String name;
+    private String number;
+
+    public Contact(String name, String number) {
+        this.name = name;
+        this.number = number;
     }
 
-    public K getKey() {
-        return key;
+    public String getName() {
+        return name;
     }
 
-    public V getVolue() {
-        return value;
+    public String  getNumber() {
+        return number;
     }
 
-    public void setVolue(V value) {
-        this.value = value;
-    }
-
-    public K toString(K key) {
-        return key;
+    public String toString() {
+        return name + " - " + number;
     }
 }

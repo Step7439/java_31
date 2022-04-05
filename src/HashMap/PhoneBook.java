@@ -1,28 +1,38 @@
 package HashMap;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class PhoneBook<K, V> {
-    List<Contact<K, V>> grup = new ArrayList<>();
+public class PhoneBook {
+    HashMap<String, String> map = new HashMap<>();
 
-    public void put(K key, V value) {
-        for (Contact<K, V> kv : grup) {
-            if (kv.getKey().equals(key)) {
-                kv.setVolue(value);
-                return;
-            }
-        }
-        Contact<K, V> newKv = new Contact<>(key, value);
-        grup.add(newKv);
+    // метод создания группы
+    void addGroup(String group){
+        map.put(group,null);
+    }
+    // метод добавления контакта
+    void addContact(String grupe,String contact){
+        map.put(grupe,contact);
     }
 
-    public V get(K key) {
-        for (Contact<K, V> kv : grup) {
-            if (kv.getKey().equals(key)) {
-                return kv.getVolue();
+    // метод получения контактов по группе
+    String getСontacts(String group){
+       return map.get(group);
+    }
+
+//     метод получения контакта по имени
+    List<String> getСontactByName(String name){
+        List<String> result = new ArrayList<>();
+        for (Map.Entry entry : map.entrySet()){
+            //System.out.println(entry.getValue());
+            if (entry.setValue(name) == name){
+                System.out.println(entry.getValue());111
             }
         }
-        return null;
+        return result;
     }
+
+//    // метод получения контакта по номеру
+//    Contact getСontactByPhone(String phone);
+
 }
+
