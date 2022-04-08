@@ -1,20 +1,27 @@
 package HashMap;
 
-import com.sun.jdi.Value;
-
-import java.security.Key;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PhoneBook map = new PhoneBook();
+        PhoneBook contacts = new PhoneBook();
+        Contact contact1 = new Contact("Pety","89992342115");
+        Contact contact2 = new Contact("Oly", "89992344317");
 
-        map.addGroup("Изброные");
-        map.addGroup("Рабочи телефон");
-        map.addContact("Изброные", String.valueOf(new Contact("Pety","89992342115")));
-        map.addContact("Рабочи телефон", String.valueOf(new Contact("Oly", "89992344317")));
-        System.out.println(map.getСontacts("Изброные"));
-        System.out.println(map.getСontactByName("Oly"));
+        contacts.addGroup("Рабочая");
+        contacts.addGroup("Друзья");
+        contacts.addGroup("Изброная");
+
+        String[] grupe = {"Рабочая","Друзья","Изброная"};
+
+        contacts.addContact(contact1,grupe);
+        contacts.addContact(contact2,grupe);
+
+        Contact contact3 = contacts.getСontactByPhone("89992342115");
+        System.out.println(contact3);
+
+        List<Contact> contact4 = contacts.findContactsInGroup("Рабочая");
+        System.out.println(contact4);
+
     }
 }

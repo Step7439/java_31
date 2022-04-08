@@ -3,20 +3,33 @@ package HashMap;
 import java.util.*;
 
 public class PhoneBook {
-    HashMap<String, String> map = new HashMap<>();
+    HashMap<String, List<Contact>> map = new HashMap<>();
 
     // метод создания группы
-    void addGroup(String group){
-        map.put(group,null);
+    void addGroup(String group) {
+        map.put(group, new ArrayList<>());
     }
+
     // метод добавления контакта
-    void addContact(String grupe,String contact){
-        map.put(grupe,contact);
+    void addContact(Contact contact, String[] grupe) {
+        for (String grups : grupe) {
+            if (!map.containsKey(grups)) {
+                System.out.println("Такой группы нет");
+            }
+            List<Contact> contactGrup = map.get(grups);
+            contactGrup.add(contact);
+        }
     }
 
     // метод получения контактов по группе
-    String getСontacts(String group){
-       return map.get(group);
+    public List<Contact> findContactsInGroup(String group){
+        List<Contact> all = new ArrayList<>();
+        List<Contact> contactsInGroup = map.get(group);
+        for (int i = 0; i < contactsInGroup.size(); i++) {
+            Contact allContacts = contactsInGroup.get(i);
+            all.add(allContacts);
+        }
+        return all;
     }
 
 //     метод получения контакта по имени
@@ -31,8 +44,17 @@ public class PhoneBook {
         return result;
     }
 
-//    // метод получения контакта по номеру
-//    Contact getСontactByPhone(String phone);
+//     метод получения контакта по номеру
+public Contact getСontactByPhone(String number) {
+    Contact contact1 = null;
+    for (Map.Entry<String, List<Contact>> allMap : map.entrySet())
+        for (Contact contact : allMap.getValue())
+            if (contact.getNumber().equals(number)) {
+                contact1 = contact;
+
+            }
+    return contact1;
+}
 
 }
 
