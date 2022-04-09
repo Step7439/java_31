@@ -33,16 +33,16 @@ public class PhoneBook {
     }
 
 //     метод получения контакта по имени
-    List<String> getСontactByName(String name){
-        List<String> result = new ArrayList<>();
-        for (Map.Entry entry : map.entrySet()){
-            //System.out.println(entry.getValue());
-            if (entry.setValue(name) == name){
-                System.out.println(entry.getValue());
+public Contact getСontactByName(String name) {
+    Contact contact1 = null;
+    for (Map.Entry<String, List<Contact>> allMap : map.entrySet())
+        for (Contact contact : allMap.getValue())
+            if (contact.getName().equals(name)) {
+                contact1 = contact;
+
             }
-        }
-        return result;
-    }
+    return contact1;
+}
 
 //     метод получения контакта по номеру
 public Contact getСontactByPhone(String number) {

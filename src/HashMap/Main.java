@@ -23,5 +23,7 @@ public class Main {
         List<Contact> contact4 = contacts.findContactsInGroup("Рабочая");
         System.out.println(contact4);
 
+        Contact contact5 = contacts.getСontactByName("Oly");
+        System.out.println(contact5);
     }
 }
